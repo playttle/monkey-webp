@@ -1,0 +1,3 @@
+[submodule "native/webp-android-backport"]
+	path = native/webp-android-backport
+	url = https://github.com/alexey-pelykh/webp-android-backport
