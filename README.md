@@ -16,13 +16,13 @@ The module uses the WebP Android Backport library: [github.com/alexey-pelykh/web
 
 ### Android
 
-1. Add a reference to the library in the `project.properties` file:
+1. Add a reference to the library in the `yourgame.build/android/project.properties` file:
 
        # Project target.
        target=android-13
        android.library.reference.1=../../native/webp-android-backport/webp-android-backport-library
        
-2. Add or copy the `local.properties` file from the your Android project to `webp/native/webp-android-backport-library`. It contains a path to your Android SDK. 
+2. Copy the `yourgame.build/android/local.properties` file from the your Android project to `webp/native/webp-android-backport-library`. It contains a path to your Android SDK. Done!
 3. If you have pulled the source code from *github.com*, you will need to compile the native library using the Android NDK. From the command line, you shall call the `ndk-build` command in the `webp/native/webp-android-backport-library` directory. Also change target to android-13 at `webp/native/webp-android-backport-library/project.properties`.
 
 ### iOS
