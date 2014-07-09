@@ -2,7 +2,7 @@
 
 This Monkey module allows you to load WebP images.
 
-Supported platforms: Android, iOS.
+Supported targets: Android, iOS.
 
 The module uses the WebP Android Backport library: [github.com/alexey-pelykh/webp-android-backport](https://github.com/alexey-pelykh/webp-android-backport).
 
@@ -18,7 +18,7 @@ The module uses the WebP Android Backport library: [github.com/alexey-pelykh/web
 
         # Project target.
         target=android-13
-        android.library.reference.1=../../native/webp-android-backport/webp-android-backport-library
+        android.library.reference.1=../../webp/native/webp-android-backport/webp-android-backport-library
        
 2. Copy the `yourgame.build/android/local.properties` file from the your Android project to `webp/native/webp-android-backport-library`. It contains a path to your Android SDK. Done!
 3. If you have pulled the source code from *github.com*, you will need to compile the native library using the Android NDK. From the command line, you shall call the `ndk-build` command in the `webp/native/webp-android-backport-library` directory. Also change target to android-13 at `webp/native/webp-android-backport-library/project.properties`.
@@ -32,10 +32,10 @@ If you have pulled the source code from *github.com*, it requires to compile `We
 ## Usage
 
 ```
-Local img:Image = WebP.LoadImage("picture.webp")
-
+Import webp
 ...
-    
+Local img:Image = WebP.LoadImage("picture.webp")
+...
 DrawImage(img, 0, 0)
 ```
 
