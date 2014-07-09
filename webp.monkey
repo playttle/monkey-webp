@@ -41,7 +41,7 @@ Import mojo.graphicsdevice
 
 Public
 
-#If WEBP_IMPLEMENTED="1"
+#If WEBP_IMPLEMENTED
 Class WebP
 	Function LoadImage:Image( path:String, frameCount:Int=1, flags:Int=Image.DefaultFlags )
 		Local surf := WebPGlue.LoadSurface( FixDataPath(path) )
